@@ -1,0 +1,9 @@
+@import "helps/mixins";
+@import "helps/animations";
+
+
+.radius{
+	border-radius: 10px;
+	flex-flow: nowrap;
+	box-shadow: #0288f3;
+}

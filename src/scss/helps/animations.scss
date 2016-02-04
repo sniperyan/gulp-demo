@@ -1,0 +1,159 @@
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    @include translate(0, 500px);
+  }
+  100% {
+    opacity: 1;
+    @include translate(0, 0);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    @include translate(0, 500px);
+  }
+  100% {
+    opacity: 1;
+    @include translate(0, 0);
+  }
+}
+
+.fade-in-up {
+  @include animation(fade-in-up);
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    @include  translate3d(0,100%,0);
+  }
+  100% {
+    opacity: 1;
+    @include transform-origin(none);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    @include translate3d(0,100%,0);
+  }
+  100%{
+    opacity: 1;
+    @include transform-origin(none);
+  }
+}
+
+.fadeInUp{
+  @include transform-origin(none);
+}
+
+@-webkit-keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    @include translate(0,-100%);
+  }
+  100% {
+    opacity: 1;
+    @include translate(0,0);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    @include translate(0,-100%);
+  }
+  100% {
+    opacity: 1;
+    @include translate(0,0);
+  }
+}
+.fade-in-down {
+  @include animation(fade-in-down);
+}
+
+
+@-webkit-keyframes zoom-in {
+  0% {
+    opacity: 0;
+    @include scale(.7);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    @include scale(.7);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.zoom-in {
+  @include animation(zoom-in);
+}
+
+//转场动画
+
+/* move from / to and fade */
+
+@-webkit-keyframes moveToLeftFade {
+  to {
+    opacity: 0.3;
+    @include translate(-100%, 0);
+  }
+}
+
+@keyframes moveToLeftFade {
+  to {
+    opacity: 0.3;
+    @include translate(-100%, 0);
+  }
+}
+
+@-webkit-keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    @include translate(-100%, 0);
+  }
+}
+
+@keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    @include translate(-100%, 0);
+  }
+}
+
+@-webkit-keyframes moveToRightFade {
+  to {
+    opacity: 0.3;
+    @include translate(100%, 0);
+  }
+}
+
+@keyframes moveToRightFade {
+  to {
+    opacity: 0.3;
+    @include translate(100%, 0);
+  }
+}
+
+@-webkit-keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    @include translate(100%, 0);
+  }
+}
+
+@keyframes moveFromRightFade {
+  from {
+    opacity: 0.3; @include translate(100%, 0);
+  }
+}

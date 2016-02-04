@@ -1,0 +1,1 @@
+{"version":3,"sources":["demo.scss"],"names":[],"mappings":"AAAA,WACC,YAAa,aACI,yBACY,6BAAA,AACJ,0BADI,AACJ,wBADI,AACJ,oBAAA,CACzB","file":"demo.min.css","sourcesContent":[".my-radius{\r\n\twidth: 300px;\r\n    height: 150px;\r\n    background-color: #015ee6;\r\n    animation: zoom-in 2s;          \r\n}"],"sourceRoot":"/source/"}
